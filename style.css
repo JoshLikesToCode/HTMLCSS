@@ -88,3 +88,43 @@ a:hover {
 #contact p:last-child {
     margin-top: 3rem;
 }
+
+/* navbar */
+nav {
+    font-family: var(--mono);
+    font-size: 80%;                 /* take base font size and reduce by 80 % */
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* for name in navbar */
+nav li:first-child {
+    flex-basis: 100%; /* pushes name to its own line */
+    text-align: center;
+}
+
+/* covers all states with a tag */
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: var(--margenta); 
+}
