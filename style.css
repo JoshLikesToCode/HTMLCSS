@@ -140,3 +140,43 @@ nav a:hover
 nav [class*="fa-"]:hover {
     color: var(--margenta); 
 }
+
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+/* footer section */
+footer {
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+}
+
+/* styles that will be effective only when the window is 850pixels wide */
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* In the nav bar, this will push "Joshua Stone" to the right and everything else to the left */
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
